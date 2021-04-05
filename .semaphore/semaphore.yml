@@ -12,3 +12,9 @@ blocks:
           commands:
             - checkout
             - docker build -t your-image .
+  - name: list images
+    task:
+      jobs:
+        - name: docker images
+          commands:
+            - docker images
